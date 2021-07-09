@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Google Font to be used for header text -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <!-- Google Font for the rest of the text -->
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <!-- CSS stylesheet page call -->
+        <link href="css/site.css" rel="stylesheet">
+        <title>
+            My Stock and Currencies Page
+        </title>
+    </head>
+
+    <!-- showing percentage of what analysists say to either buy or to hold the stock -->
+    <!-- hardcoded with stocks I have over on Robinhood -->
+    <!-- future: add percentages and different colors to represent to hold or to sell as well -->
+    <body>
+        <div class="container">
+            <h1>Stocks to Check Out!</h1>
+            <div class="stock-info">
+                <p onClick="alert('As of July 3, 2021, the stock is at $16.05')">Microvision (MVIS)</p>
+                <div class="bar-chart">
+                    <div class="progression-bar rate" style="width: 60%"></div>
+                </div>
+            </div>
+            <div class="stock-info">
+                <p onClick="alert('As of July 3, 2021, the stock is at $277.80')">Microsoft (MVIS)</p>
+                <div class="bar-chart">
+                    <div class="progression-bar rate" style="width: 92%"></div>
+                </div>
+            </div>
+            <div class="stock-info">
+                <p onClick="alert('As of July 3, 2021, the stock is at $5.39')">Nokia (Nok)</p>
+                <div class="bar-chart">
+                    <div class="progression-bar rate" style="width: 55%"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
