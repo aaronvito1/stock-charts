@@ -23,27 +23,32 @@
     <!-- future: add percentages and different colors to represent to hold or to sell as well -->
     <body>
         <div class="container">
-            <h1>Stocks to Check Out!</h1>
-            <div class="stock-info">
-                <p onClick="alert('As of July 3, 2021, the stock is at $16.05')">Microvision (MVIS)</p>
-                <div class="bar-chart">
-                    <div class="progression-bar rate" style="width: 60%"></div>
-                </div>
-            </div>
-            <div class="stock-info">
-                <p onClick="alert('As of July 3, 2021, the stock is at $277.80')">Microsoft (MVIS)</p>
-                <div class="bar-chart">
-                    <div class="progression-bar rate" style="width: 92%"></div>
-                </div>
-            </div>
-            <div class="stock-info">
-                <p onClick="alert('As of July 3, 2021, the stock is at $5.39')">Nokia (Nok)</p>
-                <div class="bar-chart">
-                    <div class="progression-bar rate" style="width: 55%"></div>
-                </div>
-            </div>
+            <h1>Find Info on a Stock!</h1>
+
+            <section>
+                <div>Enter a stock ticker and date to find specific data</div>
+                <input placeholder="Search for a Stock" id="search">
+                <input placeholder="YYYY-MM-DD" id="searchDate">
+                <button onClick="doFetch()">Search</button>
+                <!-- <button onClick="displayOutput()">Display Stock Info</button> -->
+                <section id="outputInfo">
+                        <div id="chart-location">
+                            <div id="results">
+                                <div class="progression-bar">
+                                </div>
+                                <div class="progression-bar-close">
+                                </div>
+                            </div>
+                        </div>            
+                </section>
+
+            </section>
+            <button onClick="window.location.reload();">Refresh Page</button>
+
         </div>
-        <script src="./js/main.js"></script>
+
+    <script src="./js/main.js"></script>
     </body>
 
 </html>
+
